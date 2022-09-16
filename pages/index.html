@@ -1,13 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+<ul>
+    <li id="id">texto</li>
+    <li id="id">texto</li>
+    <li id="id">texto</li>
+    <li id="id">texto</li>
+    <li id="id">texto</li>
+
+</ul>
+
+<ol>
+    <li>escribe</li>
+    <li>escribe</li>
+    <li>escribe</li>
+    <li>escribe</li>
+    <li>escribe</li>
+</ol>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi tienda</title>
+    <title>Document</title>
 </head>
+
 <body>
-    <button type="submit">Guardar</button>
-    <div>es un contenedor</div>
+    <h1>formulario html</h1>
+    <form action="/mipagina/" method="get">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="inputNombre">nombre:</label>
+            <input name="nombre" id="inputNombre" type="text" width="200" placeholder="aquí va tu nombre"><br><br>
+            <label for="inputApellido">apellido:</label>
+            <input name="apellido" id="inputApellido" type="text" width="200" placeholder="aquí va tu apellido"><br><br>
+            <label for="tipoDocumento">tipo de documento:</label>
+            <select name="tipoDocumento" id="tipoDocumento">
+                <optgroup label="grupo 1">
+                    <option value="cc">cedula de ciudadania</option>
+                    <option value="ti">tarjeta de identidad</option>
+                </optgroup>
+
+                <optgroup label="grupo 2">
+                    <option value="ps">pasaporte</option>
+                    <option value="rc">registro civil</option>
+                </optgroup>
+
+            </select><br><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Datos Academicos</legend>
+            <label for="inputCurso">curso:</label>
+            <input list="cursos" type="text" id="inputCurso">
+            <datalist id="cursos" name="curso">
+                <option value="Matematicas">
+                <option value="Ciencias">
+                <option value="Español">
+            </datalist><br>
+            <label for="txtDescripcion">descripcion:</label><br><br>
+            <textarea value="" name="descripcion" id="txtDescripcion" cols="50" rows="10">
+        </textarea><br><br>
+        </fieldset><br>
+        <input type="submit" value="Guardar">
+        <button title="Botón cancelar">
+            Cancelar
+        </button> <br>
+
+    </form>
+
+
+    <table border="3">
+        <tr>
+            <th>columna 1</th>
+            <th>columna 2</th>
+            <th>columna 3</th>
+        </tr>
+        <tr>
+            <td>data 1,1</td>
+            <td>data 1,2</td>
+            <td>data 1,3</td>
+        </tr>
+        <tr>
+            <td>data 2,1</td>
+            <td>data 2,2</td>
+            <td>data 2,3</td>
+        </tr>
+        <tr>
+            <td>data 3,1</td>
+            <td>data 3,2</td>
+            <td>data 3,3</td>
+        </tr>
+
+    </table>
 </body>
+
 </html>
