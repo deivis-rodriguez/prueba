@@ -1,39 +1,77 @@
 <!DOCTYPE html>
+<!--  grupo 43-->
 <html lang="en">
-<ul>
-    <li id="id">texto</li>
-    <li id="id">texto</li>
-    <li id="id">texto</li>
-    <li id="id">texto</li>
-    <li id="id">texto</li>
-
-</ul>
-
-<ol>
-    <li>escribe</li>
-    <li>escribe</li>
-    <li>escribe</li>
-    <li>escribe</li>
-    <li>escribe</li>
-</ol>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <style>
+        h1{
+            background-color: blue;
+        }
+    </style>-->
+    <link rel="stylesheet" href="estilos.css">
+
     <title>Document</title>
 </head>
 
 <body>
-    <h1>formulario html</h1>
+    <h1>Elementos html</h1>
+
+    <div id="contenedor">
+        <h2>titulo seccion selectores</h2>
+        <p>
+            <span>Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat.
+        </p>
+        <span class="">texto muestra</span>
+        <h3>titulo <span>parrafo</span></h3>
+        <p id="parrafo-importante">
+            <span>Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat.
+        </p>
+        <div>
+            <p>
+                <span>Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
+        </div>
+    </div>
+
+    <h2>listas desordenas</h2>
+
+    <ul>
+        <li id="id">texto</li>
+        <li id="id">texto</li>
+        <li id="id">texto</li>
+        <li id="id">texto</li>
+        <li id="id">texto</li>
+
+    </ul>
+    <h2>listas ordenas</h2>
+    <ol>
+        <li>escribe</li>
+        <li>escribe</li>
+        <li>escribe</li>
+        <li>escribe</li>
+        <li>escribe</li>
+    </ol>
+    <h2>formulario html</h2>
     <form action="/mipagina/" method="get">
         <fieldset>
-            <legend>Datos personales</legend>
-            <label for="inputNombre">nombre:</label>
+            <legend class="etiqueta">Datos personales</legend>
+            <label class="etiqueta" for="inputNombre">nombre:</label>
             <input name="nombre" id="inputNombre" type="text" width="200" placeholder="aquí va tu nombre"><br><br>
-            <label for="inputApellido">apellido:</label>
+            <label class="etiqueta" for="inputApellido">apellido:</label>
             <input name="apellido" id="inputApellido" type="text" width="200" placeholder="aquí va tu apellido"><br><br>
-            <label for="tipoDocumento">tipo de documento:</label>
+            <label class="etiqueta" for="tipoDocumento">tipo de documento:</label>
             <select name="tipoDocumento" id="tipoDocumento">
                 <optgroup label="grupo 1">
                     <option value="cc">cedula de ciudadania</option>
@@ -48,7 +86,7 @@
             </select><br><br>
         </fieldset><br>
         <fieldset>
-            <legend>Datos Academicos</legend>
+            <legend class="etiqueta">Datos Academicos</legend>
             <label for="inputCurso">curso:</label>
             <input list="cursos" type="text" id="inputCurso">
             <datalist id="cursos" name="curso">
