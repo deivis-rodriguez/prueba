@@ -7,28 +7,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera pagina web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" media="only screen and (max-width: 768px)" href="ejemplo.css" >
+
+    <style>
+        h1 {
+            background-color: aquamarine;
+            color: #f00;
+        }
+    </style>
+    <link rel="stylesheet" href="/grupo25/css/estilos.css">
 </head>
 
 <body>
-    <h1>etiquetas html</h1>
+    <h1 style="background-color: coral;">etiquetas html</h1>
     <h2>etiquetas de tabla</h2>
     <table border="1">
         <thead>
             <tr>
-                <th>columna 1</th>
-                <th>columna 2</th>
-                <th>columna 3</th>
+                <th class="cabecera">columna 1</th>
+                <th class="cabecera">columna 2</th>
+                <th class="cabecera">columna 3</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr class="cabecera">
                 <td colspan="3" align="center">celda 1.1</td>
 
             </tr>
             <tr>
                 <td>celda 2.1</td>
                 <td>celda 2.2</td>
-                <td rowspan="2">celda 2.3</td>
+                <td rowspan="2"><span>celda 2.3</span></td>
             </tr>
             <tr>
                 <td>celda 3.1</td>
@@ -44,6 +55,29 @@
         </tfoot>
     </table>
 
+    <div >
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil nisi nesciunt quam! Obcaecati fugit
+            similique inventore error iusto quo, earum nostrum cupiditate repudiandae quidem eum, facere voluptatem,
+            amet praesentium quasi.
+        </p>
+        <span>div > span</span>
+        <p>
+            <span>div > p > span</span><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aut voluptatem. Dolorum a pariatur, deleniti
+            dolor delectus suscipit minus, natus vel maxime autem ullam soluta mollitia vero accusamus facere doloribus?
+        </p>
+        <div>
+            <p>
+                <span>div > div > p > span</span>
+            </p>
+        </div>
+        <p  id="texto_especial">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad illo consequatur labore exercitationem eveniet!
+            Aperiam placeat tempore minus vitae quisquam quo, beatae odio ullam neque! Tempora eius quod nemo pariatur?
+        </p>
+    </div>
+
     <h2>etiquetas para listar</h2>
     <h3>lista desordenada</h3>
     <ul type="square">
@@ -58,14 +92,14 @@
         <li>elemento de lista</li>
     </ol>
 
-    <h2 style="background-color: #f00;">etiquetas para formulario</h2>
+    <h2>etiquetas para formulario</h2>
     <form action="url/destino/informacion" method="get">
         <fieldset>
             <legend>datos personales</legend>
-            <label style="background-color: #ff0;" for="nombre">nombres: </label>
+            <label for="nombre">nombres: </label>
             <input id="nombre" name="nombre" type="text" placeholder="sus nombres">
             <br><br>
-            <label style="background-color: #ff0;" for="apellidos">apellidos: </label>
+            <label for="apellidos">apellidos: </label>
             <input id="apellidos" name="apellidos" type="text" placeholder="sus apellidos">
             <br><br>
             <label for="">sexo:</label><br>
