@@ -12,8 +12,8 @@
 <body>
     <header>
         <figure>
-            <img src="ruta a la imagen" alt="logo">
-            <figcaption>descripción de la imagen</figcaption>
+            <img src="/grupo43/maquetacion/imagenes/rama.png" alt="logo">
+            <figcaption>nombre empresa</figcaption>
         </figure>
         <h1>titulo principal de la pagina</h1>
     </header>
@@ -29,21 +29,21 @@
     <div id="contenedor-principal">
 
         <nav id="nav-lateral">
-            <ul>
+            <ul class="dropdown-menu">
                 <li>
-                    titulo articulo
-                    <ul>
+                   <a href="titulo-art">titulo articulo</a>
+                    <ul class="dropdown-contenido">
                         <li><a href="#sec1">sección 1</a></li>
-                        <li>sección 2</li>
-                        <li>sección 3</li>
-                        <li>sección 4</li>
+                        <li><a href="#sec2">sección 2</a></li>
+                        <li><a href="#sec3">sección 3</a></li>
+                        <li><a href="#sec4">sección 4</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
         <main>
             <article>
-                <h2>titulo del articulo</h2>
+                <h2 id="titulo-art">Titulo del articulo</h2>
                 <section>
                     <h3 id="sec1">titulo de seccion 1</h3>
                     <p>
@@ -68,7 +68,7 @@
                     </p>
                 </section>
                 <section>
-                    <h3>titulo de seccion 2</h3>
+                    <h3 id="sec2">titulo de seccion 2</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nibh ac ex sagittis placerat.
                         Nunc dapibus ex quis tincidunt pretium. Cras laoreet felis neque, vel dignissim orci laoreet
@@ -91,7 +91,7 @@
                     </p>
                 </section>
                 <section>
-                    <h3>titulo de seccion 3</h3>
+                    <h3 id="sec3">titulo de seccion 3</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nibh ac ex sagittis placerat.
                         Nunc dapibus ex quis tincidunt pretium. Cras laoreet felis neque, vel dignissim orci laoreet
@@ -114,7 +114,7 @@
                     </p>
                 </section>
                 <section>
-                    <h3>titulo de seccion 4</h3>
+                    <h3 id="sec4">titulo de seccion 4</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nibh ac ex sagittis placerat.
                         Nunc dapibus ex quis tincidunt pretium. Cras laoreet felis neque, vel dignissim orci laoreet
@@ -140,6 +140,7 @@
             </article>
         </main>
         <aside>
+            <h4>información de interes</h4>
             <ul>
                 <li><a href="">podría leer esto</a></li>
                 <li><a href="">esto también te puede interesar</a></li>
@@ -172,6 +173,7 @@
                 <span>fulano de tal</span>
                 <span>tel: 232342</span>
                 <span><a href="mailto:correo@correo.com">correo: correo@correo.com</a> </span>
+                <span>&copy; 2022 tripulantes.com</span>
             </address>
         </div>
     </footer>
