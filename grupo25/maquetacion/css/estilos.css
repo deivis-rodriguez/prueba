@@ -1,0 +1,217 @@
+@media only screen and (max-width: 500px ){
+    figure{
+        display: none;
+    }
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 17px;
+    color: rgb(29, 31, 31);
+}
+
+body {
+    margin: auto 0.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(247, 249, 240);
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background: linear-gradient(to right, rgb(93, 215, 99), rgb(145, 230, 204), rgb(93, 215, 99));
+    /*border-bottom: 2px solid gray;*/
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+h3 {
+    padding: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: rgb(24, 25, 25);
+}
+
+figure {
+    width: 20%;
+}
+
+nav.menu {
+    padding: 1rem;
+    display: flex;
+    background: linear-gradient(to right, rgb(93, 215, 99), rgb(145, 230, 204), rgb(93, 215, 99));
+    justify-content: space-evenly;
+}
+
+nav.menu a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid black;
+    margin: auto 0.3rem;
+    padding: 0.4rem;
+}
+
+nav.menu a:hover {
+    background-color: rgb(255, 244, 244);
+    color: rgb(54, 52, 52);
+}
+
+#contenedor-principal {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+}
+
+nav.tabla-contenido {
+    width: 15%;
+    background: linear-gradient(120deg, rgb(93, 215, 99), rgb(145, 230, 204));
+    height: 50vh;
+    min-height: 200px;
+    
+}
+
+nav.menu div.menu-item{
+    position: relative;
+    display: inline-block;
+}
+
+ul.opciones-menu {
+    list-style-type: none;
+    position: absolute;
+    background: linear-gradient(120deg, rgb(93, 215, 99), rgb(145, 230, 204));
+    display: none;
+    width: 10rem;
+}
+
+ul.opciones-menu li {
+    padding: 0.5rem;
+    border-bottom: 1px solid rgb(184, 184, 184);
+}
+a:hover ~ ul.opciones-menu{
+    display: block;
+}
+
+main {
+    width: 60%;
+}
+
+aside {
+    width: 20%;
+}
+
+nav.tabla-contenido a {
+    display: block;
+    margin: 1rem auto;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid rgba(53, 52, 52, 0.524);
+}
+
+nav.tabla-contenido a:hover {
+    font-size: 1.5rem;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(53, 52, 52, 0.824);
+}
+
+article section {
+    margin: 0.5rem;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.2rem;
+}
+
+section.card {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(139, 230, 172);
+    margin-bottom: 0.8rem;
+    border-radius: 0.5rem 1rem;
+    align-items: center;
+}
+
+section.card h4 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    background-color: rgb(81, 214, 130);
+    padding: 0.5rem;
+    width: 90%;
+}
+
+section.card button {
+    padding: 0.3rem 1rem;
+    border-style: none;
+    font: 1em sans-serif;
+    color: antiquewhite;
+    background-color: rgb(13, 173, 69);
+}
+
+section.card button:hover {
+    background-color: rgb(15, 191, 77);
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(27, 25, 25);
+    color: rgb(241, 232, 220);
+    margin-top: 2rem;
+}
+
+footer h4 {
+    color: rgb(241, 232, 220);
+    margin-bottom: 0.5rem;
+}
+
+footer div {
+    padding: 1rem 0.5rem;
+    width: 33%;
+    text-align: justify;
+}
+
+footer div ul {
+    list-style-type: none;
+}
+
+footer div ul li {
+    padding: 0.5rem;
+}
+
+footer div p {
+    width: 80%;
+    margin-left: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(241, 232, 220);
+}
+
+footer div span {
+    display: block;
+    padding: 0.5rem;
+}
