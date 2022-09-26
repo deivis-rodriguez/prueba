@@ -1,3 +1,9 @@
+@media only screen and (max-width: 862px ){
+    figure{
+        display: none;
+    }
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -116,7 +122,7 @@ aside {
     width: 20%;
 }
 
-aside li{
+aside li {
     margin-bottom: 0.5rem;
     margin-left: 0.5rem;
 
@@ -160,7 +166,7 @@ footer {
     justify-content: space-evenly;
 }
 
-footer a{
+footer a {
     color: aliceblue;
 
 }
@@ -170,8 +176,29 @@ footer div {
     text-align: center;
 }
 
-address span{
+address span {
     padding: 0.3rem;
     margin: 0.3rem;
     display: block;
+}
+
+button {
+    background-color: rgb(42, 203, 149);
+    color: aliceblue;
+    padding: 0.5rem;
+    border-style: none;
+    margin: auto 2rem;
+    cursor: pointer;
+    height: 2rem;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(39, 177, 131);
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

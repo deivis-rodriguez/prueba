@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
     </header>
 
     <nav id="menu-principal">
-        <a class="menu-item" href="">Inicio</a>
+        <a onclick="alert('hola extraño')" class="menu-item" href="">Inicio</a>
         <a class="menu-item" href="">Pagina 2</a>
         <a class="menu-item" href="">Pagina 3</a>
         <a class="menu-item" href="">Pagina 4</a>
@@ -31,7 +31,7 @@
         <nav id="nav-lateral">
             <ul class="dropdown-menu">
                 <li>
-                   <a href="titulo-art">titulo articulo</a>
+                    <a href="titulo-art">titulo articulo</a>
                     <ul class="dropdown-contenido">
                         <li><a href="#sec1">sección 1</a></li>
                         <li><a href="#sec2">sección 2</a></li>
@@ -44,8 +44,12 @@
         <main>
             <article>
                 <h2 id="titulo-art">Titulo del articulo</h2>
-                <section>
-                    <h3 id="sec1">titulo de seccion 1</h3>
+
+                <section id="seccion-1">
+                    <div class="d-flex">
+                        <h3 id="sec1">titulo de seccion 1</h3>
+                        <button id="btn-ocultar-1" value="1">Ocultar</button>
+                    </div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nibh ac ex sagittis placerat.
                         Nunc dapibus ex quis tincidunt pretium. Cras laoreet felis neque, vel dignissim orci laoreet
@@ -67,8 +71,11 @@
                         posuere fringilla dui, at posuere tellus pretium non. In commodo fermentum scelerisque.
                     </p>
                 </section>
-                <section>
-                    <h3 id="sec2">titulo de seccion 2</h3>
+                <section id="seccion-2">
+                    <div class="d-flex">
+                        <h3 id="sec2">titulo de seccion 2</h3>
+                        <button id="btn-ocultar-2" value="2">Ocultar</button>
+                    </div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nibh ac ex sagittis placerat.
                         Nunc dapibus ex quis tincidunt pretium. Cras laoreet felis neque, vel dignissim orci laoreet
@@ -90,8 +97,11 @@
                         posuere fringilla dui, at posuere tellus pretium non. In commodo fermentum scelerisque.
                     </p>
                 </section>
-                <section>
-                    <h3 id="sec3">titulo de seccion 3</h3>
+                <section id="seccion-3">
+                    <div class="d-flex">
+                        <h3 id="sec3">titulo de seccion 3</h3>
+                        <button id="btn-ocultar-3" value="3">Ocultar</button>
+                    </div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nibh ac ex sagittis placerat.
                         Nunc dapibus ex quis tincidunt pretium. Cras laoreet felis neque, vel dignissim orci laoreet
@@ -113,8 +123,11 @@
                         posuere fringilla dui, at posuere tellus pretium non. In commodo fermentum scelerisque.
                     </p>
                 </section>
-                <section>
-                    <h3 id="sec4">titulo de seccion 4</h3>
+                <section id="seccion-4">
+                    <div class="d-flex">
+                        <h3 id="sec4">titulo de seccion 4</h3>
+                        <button id="btn-ocultar-4" value="4">Ocultar</button>
+                    </div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nibh ac ex sagittis placerat.
                         Nunc dapibus ex quis tincidunt pretium. Cras laoreet felis neque, vel dignissim orci laoreet
@@ -177,6 +190,32 @@
             </address>
         </div>
     </footer>
+
+    <script>
+        const btns_ocultar = document.querySelectorAll('button[id^="btn-ocultar-"');
+        btns_ocultar.forEach(btn => {
+            btn.addEventListener('click', e => {
+                const selector = `#seccion-${e.target.value} p`;
+                if (e.target.textContent == 'Ocultar') {
+                    ocultarSeccion(selector);
+                    e.target.textContent = 'Mostrar';
+                } else {
+                    mostrarSeccion(selector);
+                    e.target.textContent = 'Ocultar';
+                }
+            })
+        })
+        function ocultarSeccion(selector) {
+            document.querySelectorAll(selector).forEach((element) => {
+                element.style = 'display:none';
+            })
+        }
+        function mostrarSeccion(selector) {
+            document.querySelectorAll(selector).forEach((element) => {
+                element.style = 'display:block';
+            })
+        }
+    </script>
 </body>
 
 </html>
