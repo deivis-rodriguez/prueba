@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maquetación</title>
     <link rel="stylesheet" href="/grupo25/maquetacion/css/estilos.css">
+    <script src="/grupo25/maquetacion/js/clase13.js"></script>
 </head>
 
 <body>
     <header>
         <figure>
-            <img src="ruta" alt="descripción">
+            <img src="" alt="descripción">
             <figcaption>pie de imagen</figcaption>
         </figure>
         <h1>Titulo de la pagina web</h1>
@@ -51,7 +52,10 @@
 
         <main>
             <article>
-                <h2>titular del articulo</h2>
+                <div>
+                    <h2>titular del articulo</h2>
+                    <button id="o-m-texto">Ocultar</button>
+                </div>
                 <section>
                     <h3 id="seccion1">subtitulo de sección 1</h3>
                     <p>
@@ -135,7 +139,7 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem delectus eligendi libero molestias
                     sequi, odio voluptates soluta consequuntur eveniet.
                 </p>
-                <button>botón</button>
+                <button onclick="alert('hola')">botón</button>
             </section>
             <section class="card">
                 <h4>titulo de sección</h4>
@@ -176,6 +180,22 @@
             </address>
         </div>
     </footer>
+    <script>
+        //codigo javascript
+        document.getElementById('o-m-texto').addEventListener('click', (e) => {
+            if (e.target.textContent == 'Ocultar') {
+                e.target.textContent = 'Mostrar';
+                document.querySelectorAll('article section').forEach((element) => {
+                    element.style = 'display:none;';
+                })
+            } else {
+                e.target.textContent = 'Ocultar';
+                document.querySelectorAll('article section').forEach((element) => {
+                    element.style = 'display:block;';
+                })
+            }
+        })
+    </script>
 </body>
 
 </html>
