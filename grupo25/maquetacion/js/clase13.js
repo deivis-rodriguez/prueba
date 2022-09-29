@@ -94,18 +94,3 @@ switch (dia) {
 }
 
 // array
-let arreglo = [4, 3, 4, 5, 6]
-console.log(arreglo)
-console.log(`tamaño del arreglo ${arreglo.length}`)
-console.log(arreglo.push(1))
-console.log(arreglo)
-let fecha = [2022, '04', 20]
-console.log(fecha.join('/'))
-arreglo.pop()
-console.log(arreglo)
-arreglo.splice(2, 1)
-console.log(arreglo)
-arreglo.unshift(2)
-console.log(arreglo)
-arreglo.shift()
-console.log(arreglo)
