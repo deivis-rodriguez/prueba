@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>maquetacion con css</title>
     <link rel="stylesheet" href="/grupo43/maquetacion/css/estilos.css">
-   <!-- <script type="module" src="/grupo43/maquetacion/js/clase14.js"></script>
+    <!-- <script type="module" src="/grupo43/maquetacion/js/clase14.js"></script>
     <script type="module" src="/grupo43/maquetacion/js/otro.js"></script>-->
-    <script src="/grupo43/maquetacion/js/clase15.js"></script>
+    <script src="/grupo43/maquetacion/js/clase16.js"></script>
 </head>
+
 <body>
     <header>
         <figure>
@@ -18,13 +20,32 @@
         </figure>
         <h1>titulo principal de la pagina</h1>
     </header>
-    <nav id="menu-principal">
+    <nav name="menu" id="menu-principal">
         <a onclick="alert('hola extraño')" class="menu-item" href="">Inicio</a>
-        <a class="menu-item" href="">Pagina 2</a>
+        <a class="menu-item" href="">Pagina 2 <span></span></a>
         <a class="menu-item" href="">Pagina 3</a>
         <a class="menu-item" href="">Pagina 4</a>
         <a class="menu-item" href="">Ayuda</a>
     </nav>
+
+
+    <div>
+        <form >
+            <div>
+                <label for="valor1">valor 1</label>
+                <input id="valor1" type="text">
+            </div>
+            <div>
+                <label for="valor2">valor 2</label>
+                <input id="valor2" type="text">
+            </div>
+            <div>
+                <label for="resultado">resultado</label>
+                <input id="resultado" type="text">
+            </div>
+            <button type="button" onclick="sumar();">calcular</button>
+        </form>
+    </div>
 
     <div id="contenedor-principal">
 
@@ -48,6 +69,8 @@
                 <section id="seccion-1">
                     <div class="d-flex">
                         <h3 id="sec1">titulo de seccion 1</h3>
+                        <button id="btn-addParrafo-1" value="1">+</button>
+                        <button id="btn-delParrafo-1" value="1">-</button>
                         <button id="btn-ocultar-1" value="1">Ocultar</button>
                     </div>
                     <p>
@@ -74,6 +97,8 @@
                 <section id="seccion-2">
                     <div class="d-flex">
                         <h3 id="sec2">titulo de seccion 2</h3>
+                        <button id="btn-addParrafo-2" value="2">+</button>
+                        <button id="btn-delParrafo-2" value="2">-</button>
                         <button id="btn-ocultar-2" value="2">Ocultar</button>
                     </div>
                     <p>
@@ -100,6 +125,8 @@
                 <section id="seccion-3">
                     <div class="d-flex">
                         <h3 id="sec3">titulo de seccion 3</h3>
+                        <button id="btn-addParrafo-3" value="3">+</button>
+                        <button id="btn-delParrafo-3" value="3">-</button>
                         <button id="btn-ocultar-3" value="3">Ocultar</button>
                     </div>
                     <p>
@@ -126,6 +153,8 @@
                 <section id="seccion-4">
                     <div class="d-flex">
                         <h3 id="sec4">titulo de seccion 4</h3>
+                        <button id="btn-addParrafo-4" value="4">+</button>
+                        <button id="btn-delParrafo-4" value="4">-</button>
                         <button id="btn-ocultar-4" value="4">Ocultar</button>
                     </div>
                     <p>
@@ -165,7 +194,6 @@
             </div>
         </aside>
     </div>
-
     <footer>
         <div>
             <h4>descripción del aplicativo</h4>
@@ -216,7 +244,7 @@
             })
         }
     </script>
-   
+
 </body>
 
 </html>
