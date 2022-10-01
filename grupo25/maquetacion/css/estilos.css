@@ -1,5 +1,5 @@
-@media only screen and (max-width: 500px ){
-    figure{
+@media only screen and (max-width: 500px) {
+    figure {
         display: none;
     }
 }
@@ -28,6 +28,29 @@ header {
     margin-top: 0.5rem;
     background: linear-gradient(to right, rgb(93, 215, 99), rgb(145, 230, 204), rgb(93, 215, 99));
     /*border-bottom: 2px solid gray;*/
+}
+
+figure#carrito {
+    position: relative;
+    display: inline-block;
+}
+
+figcaption#cont-carrito {
+    background-color: red;
+    padding-left: 3px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+
+ul#contenido_carro {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    background: linear-gradient(120deg, rgb(93, 215, 99), rgb(145, 230, 204));
+}
+
+figure:hover  ul#contenido_carro {
+    display: block;
 }
 
 h1 {
@@ -88,10 +111,10 @@ nav.tabla-contenido {
     background: linear-gradient(120deg, rgb(93, 215, 99), rgb(145, 230, 204));
     height: 50vh;
     min-height: 200px;
-    
+
 }
 
-nav.menu div.menu-item{
+nav.menu div.menu-item {
     position: relative;
     display: inline-block;
 }
@@ -108,7 +131,8 @@ ul.opciones-menu li {
     padding: 0.5rem;
     border-bottom: 1px solid rgb(184, 184, 184);
 }
-a:hover ~ ul.opciones-menu{
+
+a:hover~ul.opciones-menu {
     display: block;
 }
 
@@ -153,7 +177,8 @@ section.card {
     align-items: center;
 }
 
-section.card h4 {
+section.card h4,
+h3 {
     text-align: center;
     margin-bottom: 0.5rem;
     background-color: rgb(81, 214, 130);
